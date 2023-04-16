@@ -20,7 +20,7 @@ print(data.tail())
 
 # operations with data
 data.dropna(inplace=True)
-#print(data.columns)
+print(data.columns)
 neighbourhood_group_num = LabelEncoder()
 neighbourhood_num = LabelEncoder()
 room_type_num = LabelEncoder()
