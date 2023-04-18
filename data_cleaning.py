@@ -17,7 +17,7 @@ def clean_data(data):
     data['neighbourhood'] = neighbourhood_num.transform(data['neighbourhood'])
     data['room_type'] = room_type_num.transform(data['room_type'])
 
-    drop_column = ['name', 'host_name', 'last_review']
+    drop_column = ['id','host_id', 'name', 'host_name', 'last_review']
     data = data.drop(drop_column, axis=1)
 
     scaler = StandardScaler()
